@@ -1,0 +1,112 @@
+#создаем пользователей (не все вторы)
+User.objects.create_user('user1')
+User.objects.create_user('user2')
+User.objects.create_user('user3')
+User.objects.create_user('user4')
+
+#добавляем авторов по имени пользователя   
+Author.objects.create(username = User.objects.get(username='user3'))
+Author.objects.create(username = User.objects.get(username='user1')) 
+
+#добавляем категории
+Category.objects.create(name='Стихи')
+Category.objects.create(name='Проза')
+Category.objects.create(name='Техника')
+Category.objects.create(name='Наука')
+
+#добавляем статьи и новости
+Post.objects.create(post_category='post',post_head='Hello',post_text='Статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья ',author=Author.objects.get(username=User.objects.get(username='user1')))
+Post.objects.create(post_category='post',post_head='Привет',post_text='Статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья ',author=Author.objects.get(username=User.objects.get(username='user3')))
+Post.objects.create(post_category='news',post_head='Название',post_text='Статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья статья ',author=Author.objects.get(username=User.objects.get(username='user3')))
+
+#добавляем связи между постами и категориями через промежуточную таблицу
+PostCategory.objects.create(post=Post.objects.get(post_head='Hello'),category=Category.objects.get(name='Стихи'))            
+PostCategory.objects.create(post=Post.objects.get(post_head='Hello'),category=Category.objects.get(name='Проза'))
+PostCategory.objects.create(post=Post.objects.get(post_head='Привет'),category=Category.objects.get(name='Стихи'))
+PostCategory.objects.create(post=Post.objects.get(post_head='Привет'),category=Category.objects.get(name='Техника'))
+PostCategory.objects.create(post=Post.objects.get(post_head='Название'),category=Category.objects.get(name='Стихи'))
+PostCategory.objects.create(post=Post.objects.get(post_head='Название'),category=Category.objects.get(name='Наука'))
+
+#добавляем комментарии
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Hello'),in_user=User.objects.get(username='user1'))
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Название'),in_user=User.objects.get(username='user4'))
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Hello'),in_user=User.objects.get(username='user2'))
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Привет'),in_user=User.objects.get(username='user4'))
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Название'),in_user=User.objects.get(username='user3'))
+Comment.objects.create(comment_text='Хорошо',in_post=Post.objects.get(post_head='Привет'),in_user=User.objects.get(username='user1'))
+
+#лайкаем и дизлайкаем
+Comment.objects.get(pk=1).like()
+Comment.objects.get(pk=1).like()
+Comment.objects.get(pk=1).like()
+Comment.objects.get(pk=1).dislike()
+Comment.objects.get(pk=2).like()
+Comment.objects.get(pk=2).like()
+Comment.objects.get(pk=2).like()
+Comment.objects.get(pk=2).like()
+Comment.objects.get(pk=2).like()
+Comment.objects.get(pk=2).dislike()
+Comment.objects.get(pk=3).like()
+Comment.objects.get(pk=3).like()
+Comment.objects.get(pk=4).like()
+Comment.objects.get(pk=4).like()
+Comment.objects.get(pk=4).dislike()
+Comment.objects.get(pk=5).like()
+Comment.objects.get(pk=5).like()
+Comment.objects.get(pk=5).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+Comment.objects.get(pk=6).like()
+
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=1).like()
+Post.objects.get(pk=2).like() 
+Post.objects.get(pk=2).like()
+Post.objects.get(pk=2).like()
+Post.objects.get(pk=2).dislike() 
+Post.objects.get(pk=3).like()    
+Post.objects.get(pk=3).like()
+Post.objects.get(pk=3).like()
+
+#обновляем рейтинги пользователей (я так понял, то обновляем мы рейтинги авторов, те, кто не авторы в рейтинге не участвуют)
+a = Author.objects.all()
+best_user_id = 0
+best_user_rate = 0
+for i in a:
+    i.update_rating()
+    if best_user_rate < i.user_rating:
+        best_user_rate = i.user_rating
+        best_user_id = i.username_id	
+
+#выводим лучшего
+print(f'Лучший пользователь {User.objects.get(author=best_user_id).username}, его рейтинг {best_user_rate}')  
+
+#вычисляем самый лучший пост
+best_post = 0
+for i in Post.objects.all():
+    if best_post < i.post_rating:
+        best_post = i.post_rating
+
+p = Post.objects.get(post_rating=best_post) 
+print(f'Лушая статья: Дата {p.time_in.strftime("%d %b %Y")}, автор {p.author.username}, рейтинг {p.post_rating}, заголовок {p.post_head}, превью {p.preview()}')
+
+#выводим комментарии к этой статье
+for i in Comment.objects.filter(in_post=p.id).values(): 
+    print(f'Комментарии к статье {p.post_head} - Текст {i["comment_text"]}, Пользователь {User.objects.get(id=i["in_user_id"]).username}, Дата добавления {i["time_in"].strftime("%d %b %Y")}, Рейтинг {i["comment_rating"]}')
+
+
+
+	
+    
+
+
+
+
