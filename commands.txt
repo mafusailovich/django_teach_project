@@ -89,13 +89,8 @@ for i in a:
 #выводим лучшего
 print(f'Лучший пользователь {User.objects.get(author=best_user_id).username}, его рейтинг {best_user_rate}')  
 
-#вычисляем самый лучший пост
-best_post = 0
-for i in Post.objects.all():
-    if best_post < i.post_rating:
-        best_post = i.post_rating
 
-p = Post.objects.get(post_rating=best_post) 
+p = Post.objects.all().order_by('-post_rating')[0] 
 print(f'Лушая статья: Дата {p.time_in.strftime("%d %b %Y")}, автор {p.author.username}, рейтинг {p.post_rating}, заголовок {p.post_head}, превью {p.preview()}')
 
 #выводим комментарии к этой статье
