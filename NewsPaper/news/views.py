@@ -6,7 +6,7 @@ from .models import Post
 # Create your views here.
 class PostList(ListView):
     model = Post
-    ordering = 'post_head'
+    ordering = '-time_in'
     template_name = 'news.html'
     context_object_name = 'posts'
 
