@@ -3,6 +3,8 @@
 
 {% load custom_filters %}
 
+{% load custom_tags %}
+
 {% block title %}
 News
 {% endblock title %}
@@ -13,6 +15,10 @@ News
     <hr>
     <h3>Всего новостей: {{ posts|length }}</h3>
     <hr>
+    <form action="" method="get">
+        {{ filterset.form.as_p }}
+        <input type="submit" value="Поиск"/>
+    </form>
     <table>
         <tr>
             <td>Заголовок</td>
@@ -26,5 +32,25 @@ News
             <td>{{ post.post_text | truncatechars:20 | censor }}</td>
         </tr>
         {% endfor %}
+
     </table>
+    {% if page_obj.has_previous %}
+       <a href="?{% url_replace page=1 %}">Первая страница</a>
+       {% if page_obj.previous_page_number != 1 %}
+           ...
+           <a href="?{% url_replace page=page_obj.previous_page_number %}">Страница {{ page_obj.previous_page_number }}</a>
+       {% endif %}
+   {% endif %}
+
+
+    Страница {{ page_obj.number }}
+
+
+   {% if page_obj.has_next %}
+       <a href="?{% url_replace page=page_obj.next_page_number %}">Страница {{ page_obj.next_page_number }}</a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           ...
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}">Последняя страница</a>
+       {% endif %}
+   {% endif %}
 {% endblock content %}

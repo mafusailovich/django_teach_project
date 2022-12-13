@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime
+from django.core.validators import MinValueValidator
+from django.urls import reverse
 
 
-POSITIONS = [('news', 'Новость'),('post', 'Статья')]
+POSITIONS = [('news', 'Новости'),('post', 'Статьи')]
 # Create your models here.
 
 
@@ -11,11 +13,6 @@ class Author(models.Model):
     user_rating = models.IntegerField(default=1)
 
     username = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-
-    def update_rating_1(self,raiting):
-        self.user_rating += raiting
-        self.save()
-
 
     def update_rating(self):
         self.user_rating = 0
@@ -51,7 +48,7 @@ class Post(models.Model):
     post_text = models.TextField(default='Текст отсутствует')
     post_rating = models.IntegerField(default=1)
 
-    author = models.ForeignKey(Author,on_delete=models.CASCADE)
+    author = models.ForeignKey(Author,on_delete=models.CASCADE,default=User.objects.get(username='user1').id)
     category = models.ManyToManyField(Category, through='PostCategory')
 
     def like(self):
@@ -70,6 +67,10 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.post_head.title()}: {self.post_category.title()}'
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[str(self.id)])
+
 
 
 class PostCategory(models.Model):
