@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from allauth.account.forms import SignupForm
+from django.contrib.auth.models import Group
 from datetime import datetime
 from django.core.validators import MinValueValidator
 from django.urls import reverse
@@ -94,4 +96,12 @@ class Comment(models.Model):
         self.comment_rating -= 1
         self.save()
 
+
+class BasicSignupForm(SignupForm):
+
+    def save(self, request):
+        user = super(BasicSignupForm, self).save(request)
+        basic_group = Group.objects.get(name='common')
+        basic_group.user_set.add(user)
+        return user
 

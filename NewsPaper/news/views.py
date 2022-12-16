@@ -4,6 +4,7 @@ from .models import Post
 from .filters import PostFilter
 from .forms import PostForm
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import PermissionRequiredMixin
 
 
 # Create your views here.
@@ -31,7 +32,8 @@ class PostDetail(DetailView):
     context_object_name = 'post'
 
 
-class PostCreate(CreateView):
+class PostCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('news.add_post')
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
@@ -41,7 +43,9 @@ class PostCreate(CreateView):
         post.post_category='post'
         return super().form_valid(form)
 
-class NewsCreate(CreateView):
+
+class NewsCreate(PermissionRequiredMixin, CreateView):
+    permission_required = ('news.add_post')
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
@@ -52,13 +56,15 @@ class NewsCreate(CreateView):
         return super().form_valid(form)
 
 
-class PostUpdate(UpdateView):
+class PostUpdate(PermissionRequiredMixin, UpdateView):
+    permission_required = ('news.change_post')
     form_class = PostForm
     model = Post
     template_name = 'post_edit.html'
 
 
-class PostDelete(DeleteView):
+class PostDelete(PermissionRequiredMixin, DeleteView):
+    permission_required = ('news.delete_post')
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('post_list')
