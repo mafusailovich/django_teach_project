@@ -18,7 +18,23 @@ News
     <form action="" method="get">
         {{ filterset.form.as_p }}
         <input type="submit" value="Поиск"/>
+
     </form>
+    {% if is_not_subscribe %}
+    <form action="subscribe/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="cat" value="{{ request.GET.category }}">
+        <input type="submit" value="Подписаться"/>
+    </form>
+    {% endif %}
+    {% if is_subscribe %}
+    <form action="notsubscribe/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="cat" value="{{ request.GET.category }}">
+        <input type="submit" value="Отписаться"/>
+    </form>
+    {% endif %}
+
     <table>
         <tr>
             <td>Заголовок</td>
@@ -34,6 +50,7 @@ News
         {% endfor %}
 
     </table>
+
     {% if page_obj.has_previous %}
        <a href="?{% url_replace page=1 %}">Первая страница</a>
        {% if page_obj.previous_page_number != 1 %}
@@ -53,4 +70,5 @@ News
            <a href="?{% url_replace page=page_obj.paginator.num_pages %}">Последняя страница</a>
        {% endif %}
    {% endif %}
+
 {% endblock content %}

@@ -1,6 +1,7 @@
 from django import forms
-from .models import Post,Category,PostCategory
+from .models import Post
 from django.core.exceptions import ValidationError
+from datetime import datetime
 
 
 class PostForm(forms.ModelForm):
@@ -10,12 +11,13 @@ class PostForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = [
-            #'post_head',
-            #'post_text',
+            'post_head',
+            'post_text',
             'category'
         ]
 
     def clean(self):
+
         cleaned_data = super().clean()
         post_text = cleaned_data.get("post_text")
         post_head = cleaned_data.get("post_head")

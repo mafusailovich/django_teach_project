@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Здравствуйте {{ username }}. Список новостей за неделю, на которые вы подписаны.</h2>
+    <table>
+    {% for post in posts %}
+
+        <tr>
+            <td>{{ post.post_head }}</td>
+            <td>{{ post.time_in | date:'M d Y' }}</td>
+            <td>{{ post.post_text | truncatewords:20 }}</td>
+            <td><a href="http://127.0.0.1:8000/portal/{{ post.id }}">Смотреть новость</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

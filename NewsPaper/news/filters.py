@@ -1,6 +1,6 @@
 from django_filters import *
 from django_filters.widgets import *
-from .models import Post,POSITIONS
+from .models import Post,POSITIONS, Category
 
 
 
@@ -29,4 +29,11 @@ class PostFilter(FilterSet):
         label='Позже даты',
         lookup_expr='date__gt',
         widget=forms.DateInput(attrs={'type': 'date'}, format=('%Y,%m,%d'))
+    )
+
+    category = ModelChoiceFilter(
+        field_name='postcategory__category',
+        queryset=Category.objects.all(),
+        label='Выберите категорию'
+
     )

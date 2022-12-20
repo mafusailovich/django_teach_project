@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Здравствуйте {{ username }}. В одном из разделов, на который вы подписаны, был добавлен новый материал "{{ head }}" в
+    категории "{{ category }}"</h2>
+    <p text-align="14pt">Краткое содержание "{{ text | truncatewords:20 }}". </p>
+    <p text-align="14pt">http://127.0.0.1:8000/portal/{{ id }}</p>
+
+
+</body>
+</html>

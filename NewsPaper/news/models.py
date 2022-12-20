@@ -39,6 +39,7 @@ class Author(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=255,unique=True)
+    subscribers = models.ManyToManyField(User)
 
     def __str__(self):
         return self.name.title()
@@ -97,11 +98,4 @@ class Comment(models.Model):
         self.save()
 
 
-class BasicSignupForm(SignupForm):
-
-    def save(self, request):
-        user = super(BasicSignupForm, self).save(request)
-        basic_group = Group.objects.get(name='common')
-        basic_group.user_set.add(user)
-        return user
 
