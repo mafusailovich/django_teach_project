@@ -12,16 +12,17 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import dotenv_values
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+config = dotenv_values() #берем знечения из .env
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vny9!+krqalb%#v@%*g2w=nm-gq&2bqngr9lktol3&tvd!)!k&'
+SECRET_KEY = config['KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -164,10 +165,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'test1@sch1935.site'
-EMAIL_HOST_PASSWORD = 'K<FFYDhaaEh*8eW=1'
-#EMAIL_USE_SSL = True
-DEFAULT_FROM_EMAIL = 'test1@sch1935.site'
+EMAIL_HOST_USER = config['FROM_MAIL']
+EMAIL_HOST_PASSWORD = config['PASSWORD']
+DEFAULT_FROM_EMAIL = config['FROM_MAIL']
 
 APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
 APSCHEDULER_RUN_NOW_TIMEOUT = 25  # Seconds
