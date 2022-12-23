@@ -10,7 +10,7 @@ from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMix
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
-from .tasks import hello
+from .tasks import notification
 
 
 class PostList(ListView):
@@ -38,8 +38,6 @@ class PostList(ListView):
             else:
                 context['is_not_subscribe'] = False
                 context['is_subscribe'] = True
-
-        hello.delay()
 
         return context
 
@@ -70,6 +68,7 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         #user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
         #if len(user_p) >= 3:
         #    return redirect("post_count")
+
         return super().form_valid(form)
 
 

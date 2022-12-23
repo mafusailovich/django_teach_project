@@ -15,6 +15,7 @@ class PostForm(forms.ModelForm):
             'post_text',
             'category'
         ]
+        labels= {'category':('Категория материала'),}
 
     def clean(self):
 
@@ -26,5 +27,7 @@ class PostForm(forms.ModelForm):
             raise ValidationError(
                 "Описание не должно быть идентично названию."
             )
+
+
 
         return cleaned_data
