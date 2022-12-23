@@ -163,11 +163,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'optional'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_USE_TLS = True
-EMAIL_USE_SSL = True
-EMAIL_PORT = 465
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
 EMAIL_HOST_USER = config['FROM_MAIL']
-EMAIL_HOST_PASSWORD = 'nmwlxfvduuhlbsxo'#config['PASSWORD']
+EMAIL_HOST_PASSWORD = config['PASSWORD']
 DEFAULT_FROM_EMAIL = config['FROM_MAIL']
 
 #APSCHEDULER_DATETIME_FORMAT = "N j, Y, f:s a"
