@@ -65,9 +65,9 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         #добавляю текущего автора при создании новости
         post.author = User.objects.get(username=self.request.user).author
 
-        #user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
-        #if len(user_p) >= 3:
-        #    return redirect("post_count")
+        user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
+        if len(user_p) >= 3:
+            return redirect("post_count")
 
         return super().form_valid(form)
 
