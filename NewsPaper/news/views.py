@@ -10,6 +10,7 @@ from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMix
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
+from .tasks import hello
 
 
 class PostList(ListView):
@@ -38,6 +39,8 @@ class PostList(ListView):
                 context['is_not_subscribe'] = False
                 context['is_subscribe'] = True
 
+        hello.delay()
+
         return context
 
 
@@ -64,9 +67,9 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         #добавляю текущего автора при создании новости
         post.author = User.objects.get(username=self.request.user).author
 
-        user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
-        if len(user_p) >= 3:
-            return redirect("post_count")
+        #user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
+        #if len(user_p) >= 3:
+        #    return redirect("post_count")
         return super().form_valid(form)
 
 
