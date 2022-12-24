@@ -15,11 +15,14 @@ News
     <hr>
     <h3>Всего новостей: {{ posts|length }}</h3>
     <hr>
+    {% load cache %}
+    {% cache 200 filter %}
     <form action="" method="get">
         {{ filterset.form.as_p }}
         <input type="submit" value="Поиск"/>
 
     </form>
+    {% endcache %}
     {% if is_not_subscribe %}
     <form action="subscribe/" method="POST" enctype="multipart/form-data">
         {% csrf_token %}
@@ -40,12 +43,14 @@ News
             <td>Заголовок</td>
             <td>Дата публикации</td>
             <td>Превью статьи</td>
+            <td>Страница новости</td>
         </tr>
         {% for post in posts %}
         <tr>
             <td>{{ post.post_head | censor }}</td>
             <td>{{ post.time_in | date:'M d Y' }}</td>
             <td>{{ post.post_text | truncatechars:20 | censor }}</td>
+            <td><a href="http://127.0.0.1:8000/portal/{{ post.id }}">Перейти</a></td>
         </tr>
         {% endfor %}
 

@@ -1,10 +1,10 @@
 from django.urls import path
 # Импортируем созданное нами представление
 from .views import PostList,PostDetail,PostCreate,PostUpdate,PostDelete,subscribe_me,PostCount, upgrade_me, notsubscribe_me
-
+from django.views.decorators.cache import cache_page
 
 urlpatterns = [
-    path('', PostList.as_view(), name='post_list'),
+    path('', cache_page(60)(PostList.as_view()), name='post_list'),
     path('<int:pk>', PostDetail.as_view(), name='post_detail'),
     path('news/create/', PostCreate.as_view(), name='news_create'),
     path('news/<int:pk>/edit/', PostUpdate.as_view(), name='news_edit'),

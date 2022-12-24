@@ -10,7 +10,7 @@ from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMix
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
-from .tasks import notification
+from django.core.cache import cache
 
 
 class PostList(ListView):
@@ -46,6 +46,16 @@ class PostDetail(DetailView):
     model = Post
     template_name = 'post.html'
     context_object_name = 'post'
+
+    def get_object(self, queryset=None):
+        obj = super().get_object()
+        obj = cache.get(f'post{obj.id}', None)
+
+        if not obj:
+            obj = super().get_object()
+            cache.set(f'post{obj.id}', obj)
+
+        return obj
 
 
 class PostCreate(PermissionRequiredMixin, CreateView):
