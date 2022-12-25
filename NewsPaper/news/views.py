@@ -115,7 +115,6 @@ def upgrade_me(request):
     author_group = Group.objects.get(name='authors')
     if not request.user.groups.filter(name='authors').exists():
         author_group.user_set.add(user)
-        Author.objects.create(username=User.objects.get(username=user))
     return redirect('/')
 #обработка нажатия кнопки подписка
 

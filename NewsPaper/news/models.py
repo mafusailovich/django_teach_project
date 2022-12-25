@@ -52,7 +52,7 @@ class Post(models.Model):
     post_text = models.TextField(default='Текст отсутствует')
     post_rating = models.IntegerField(default=1)
 
-    author = models.ForeignKey(Author,on_delete=models.CASCADE,default=User.objects.get(username='user1').id)
+    author = models.ForeignKey(Author,on_delete=models.CASCADE,default=User.objects.get(username='test').id)
     category = models.ManyToManyField(Category, through='PostCategory')
 
     def like(self):
