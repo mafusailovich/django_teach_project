@@ -11,6 +11,9 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
 from django.core.cache import cache
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class PostList(ListView):
@@ -38,6 +41,8 @@ class PostList(ListView):
             else:
                 context['is_not_subscribe'] = False
                 context['is_subscribe'] = True
+
+
 
         return context
 
@@ -137,4 +142,3 @@ def notsubscribe_me(request):
         subscriber.category_set.remove(Category.objects.get(pk=category))
 
     return redirect('/portal/')
-

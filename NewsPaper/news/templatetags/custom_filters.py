@@ -16,3 +16,15 @@ def censor(value):
 
     # Возвращаемое функцией значение подставится в шаблон.
     return f'{value}'
+
+@register.filter()
+def new_censor(value):
+    new_list_values = []
+    list_values = value.split()
+    for word in list_values:
+        if word in list_mat:
+            new_list_values.append(word.replace(word, word[0] + ('*'*(len(word) - 2) + word[-1])))
+        else:
+            new_list_values.append(word)
+
+    return " ".join(new_list_values)

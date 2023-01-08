@@ -1,0 +1,36 @@
+2023-01-08 18:41:55,586 - ERROR - Internal Server Error: /portal/ - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\utils\log.py - (<class 'Exception'>, Exception('Exception'), <traceback object at 0x000001C3FD748FC0>)
+Traceback (most recent call last):
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\news\views.py", line 45, in get_context_data
+    raise Exception('Exception')
+Exception: Exception
+2023-01-08 18:41:55,615 - ERROR - "GET /portal/ HTTP/1.1" 500 145 - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\servers\basehttp.py - None
+2023-01-08 20:41:18,379 - ERROR - Internal Server Error: /portal/ - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\utils\log.py - (<class 'Exception'>, Exception('Exception'), <traceback object at 0x000001FA5D97CA40>)
+Traceback (most recent call last):
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\utils\decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\base.py", line 142, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+  File "C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\news\views.py", line 45, in get_context_data
+    raise Exception('Exception')
+Exception: Exception
+2023-01-08 20:41:18,398 - ERROR - "GET /portal/ HTTP/1.1" 500 145 - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\venv\lib\site-packages\django\core\servers\basehttp.py - None

@@ -8,14 +8,15 @@ from django.urls import reverse
 from django.core.cache import cache
 
 
-POSITIONS = [('news', 'Новости'),('post', 'Статьи')]
+POSITIONS = [('news', 'Новости'), ('post', 'Статьи')]
 # Create your models here.
 
 
 class Author(models.Model):
     user_rating = models.IntegerField(default=1)
 
-    username = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+    username = models.OneToOneField(
+        User, on_delete=models.CASCADE, primary_key=True)
 
     def update_rating(self):
         self.user_rating = 0
@@ -37,33 +38,38 @@ class Author(models.Model):
             self.user_rating = 0
         self.save()
 
+    def __str__(self):
+        u = User.objects.get(author=self.username_id)
+        return u.username
+
 
 class Category(models.Model):
-    name = models.CharField(max_length=255,unique=True)
+    name = models.CharField(max_length=255, unique=True)
     subscribers = models.ManyToManyField(User)
 
     def __str__(self):
         return self.name.title()
 
+
 class Post(models.Model):
-    post_category = models.CharField(max_length=4, choices=POSITIONS,default='post')
+    post_category = models.CharField(
+        max_length=4, choices=POSITIONS, default='post')
     time_in = models.DateTimeField(auto_now_add=True)
     post_head = models.CharField(max_length=255)
     post_text = models.TextField(default='Текст отсутствует')
     post_rating = models.IntegerField(default=1)
 
-    author = models.ForeignKey(Author,on_delete=models.CASCADE,default=User.objects.get(username='test').id)
+    author = models.ForeignKey(
+        Author, on_delete=models.CASCADE, default=User.objects.get(username='test').id)
     category = models.ManyToManyField(Category, through='PostCategory')
 
     def like(self):
         self.post_rating += 1
         self.save()
 
-
     def dislike(self):
         self.post_rating -= 1
         self.save()
-
 
     def preview(self):
         tmp_str = self.post_text[0:124] + '...'
@@ -100,6 +106,3 @@ class Comment(models.Model):
     def dislike(self):
         self.comment_rating -= 1
         self.save()
-
-
-
