@@ -11,6 +11,9 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
 from django.core.cache import cache
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class PostList(ListView):
@@ -29,7 +32,7 @@ class PostList(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['filterset'] = self.filterset
-        # проверка того, что юзер не подписан на данный раздел новостей
+        #проверка того, что юзер не подписан на данный раздел новостей
         if self.request.user.is_authenticated and ('category' in self.request.GET) and (self.request.GET['category'] != ''):
             subscriber = User.objects.get(username=self.request.user)
             if not subscriber.category_set.filter(pk=self.request.GET['category']):
@@ -38,6 +41,8 @@ class PostList(ListView):
             else:
                 context['is_not_subscribe'] = False
                 context['is_subscribe'] = True
+
+        raise Exception('Exception')
 
         return context
 
@@ -69,14 +74,13 @@ class PostCreate(PermissionRequiredMixin, CreateView):
         post = form.save(commit=False)
         f_path = self.request.get_full_path()
         if 'news' in f_path:
-            post.post_category = 'news'
+            post.post_category='news'
         else:
-            post.post_category = 'post'
-        # добавляю текущего автора при создании новости
+            post.post_category='post'
+        #добавляю текущего автора при создании новости
         post.author = User.objects.get(username=self.request.user).author
 
-        user_p = Post.objects.filter(time_in__gt=datetime.now().date(
-        ), author=User.objects.get(username=self.request.user).author)
+        user_p = Post.objects.filter(time_in__gt=datetime.now().date(),author=User.objects.get(username=self.request.user).author)
         if len(user_p) >= 3:
             return redirect("post_count")
 
@@ -106,8 +110,7 @@ class IndexView(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['is_not_author'] = not self.request.user.groups.filter(
-            name='authors').exists()
+        context['is_not_author'] = not self.request.user.groups.filter(name='authors').exists()
         return context
 
 
@@ -118,8 +121,7 @@ def upgrade_me(request):
     if not request.user.groups.filter(name='authors').exists():
         author_group.user_set.add(user)
     return redirect('/')
-# обработка нажатия кнопки подписка
-
+#обработка нажатия кнопки подписка
 
 @login_required
 def subscribe_me(request):
@@ -130,7 +132,6 @@ def subscribe_me(request):
         subscriber.category_set.add(Category.objects.get(pk=category))
 
     return redirect('/portal/')
-
 
 @login_required
 def notsubscribe_me(request):

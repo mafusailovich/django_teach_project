@@ -25,9 +25,10 @@ config = dotenv_values()  # берем знечения из .env
 SECRET_KEY = config['KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
+ADMINS = [('Vladmir','test1@sch1935.site')]
 
 
 # Application definition
