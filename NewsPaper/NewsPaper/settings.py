@@ -28,7 +28,7 @@ SECRET_KEY = config['KEY']
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1']
-ADMINS = [('Vladmir','test1@sch1935.site')]
+ADMINS = [('Vladmir', 'test1@sch1935.site')]
 
 
 # Application definition
@@ -237,60 +237,59 @@ LOGGING = {
             'filters': ['require_debug_false'],
             'class': 'logging.FileHandler',
             'formatter': 'general',
-            'filename':'general.log'
+            'filename': 'general.log'
         },
         'file_error': {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'logging.FileHandler',
             'formatter': 'con_error',
-            'filename':'errors.log'
+            'filename': 'errors.log'
         },
         'file_security': {
             'level': 'DEBUG',
             'filters': ['require_debug_false'],
             'class': 'logging.FileHandler',
             'formatter': 'general',
-            'filename':'security.log'
+            'filename': 'security.log'
         },
         'mail_admins': {
             'filters': ['require_debug_false'],
             'level': 'ERROR',
             'class': 'django.utils.log.AdminEmailHandler',
-            'formatter':'con_warning'
+            'formatter': 'con_warning'
         }
     },
 
     'loggers': {
-
         'django': {
             'handlers': ['con_d', 'con_w', 'con_e', 'file_general'],
             'propagate': True,
             'level': 'DEBUG'
         },
         'django.request': {
-            'handlers': ['file_error', 'mail_admins'],
-            'level': 'ERROR',
+            'handlers': ['con_d', 'con_w', 'con_e', 'file_error', 'mail_admins', 'file_general'],
+            'level': 'DEBUG',
             'propagate': False,
         },
         'django.server': {
-            'handlers': ['file_error', 'mail_admins'],
-            'level': 'ERROR',
+            'handlers': ['con_d', 'con_w', 'con_e', 'file_error', 'mail_admins', 'file_general'],
+            'level': 'DEBUG',
             'propagate': False,
         },
         'django.template': {
-            'handlers': ['file_error'],
-            'level': 'ERROR',
+            'handlers': ['con_d', 'con_w', 'con_e', 'file_error', 'file_general'],
+            'level': 'DEBUG',
             'propagate': False,
         },
         'django.db.backends': {
-            'handlers': ['file_error'],
-            'level': 'ERROR',
+            'handlers': ['con_d', 'con_w', 'con_e', 'file_error', 'file_general'],
+            'level': 'DEBUG',
             'propagate': False,
         },
         'django.security': {
-            'level': 'DEBUG', #
-            'handlers': ['file_security'],
+            'level': 'DEBUG',
+            'handlers': ['con_d', 'con_w', 'con_e', 'file_security', 'file_general'],
             'propagate': False,
         }
     }

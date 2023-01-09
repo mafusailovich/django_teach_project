@@ -14,3 +14,80 @@
 2023-01-08 21:00:08,270 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\news\views.py changed, reloading.
 2023-01-08 21:00:08,906 - INFO -autoreload - Watching for file changes with StatReloader
 2023-01-08 22:30:00,683 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:21:01,197 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:21:18,838 - INFO -basehttp - "GET /admin/news/post/ HTTP/1.1" 200 34791
+2023-01-09 08:21:18,882 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-09 08:21:18,884 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-09 08:21:18,884 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-09 08:21:18,885 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-09 08:21:18,885 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-09 08:21:18,886 - WARNING -log - Not Found: /static/admin/css/changelists.css
+2023-01-09 08:21:18,890 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-09 08:21:18,894 - WARNING -log - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-01-09 08:21:18,894 - WARNING -basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 404 179
+2023-01-09 08:21:18,899 - WARNING -basehttp - "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,899 - WARNING -log - Not Found: /static/admin/js/jquery.init.js
+2023-01-09 08:21:18,901 - INFO -basehttp - - Broken pipe from ('127.0.0.1', 49929)
+2023-01-09 08:21:18,901 - WARNING -basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,904 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-09 08:21:18,907 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-09 08:21:18,910 - WARNING -log - Not Found: /static/admin/js/core.js
+2023-01-09 08:21:18,914 - WARNING -log - Not Found: /static/admin/js/urlify.js
+2023-01-09 08:21:18,915 - WARNING -log - Not Found: /static/admin/js/actions.js
+2023-01-09 08:21:18,915 - WARNING -log - Not Found: /static/admin/js/prepopulate.js
+2023-01-09 08:21:18,916 - WARNING -basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,916 - WARNING -basehttp - "GET /static/admin/js/core.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,916 - WARNING -log - Not Found: /static/admin/js/admin/RelatedObjectLookups.js
+2023-01-09 08:21:18,916 - INFO -basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-01-09 08:21:18,919 - WARNING -basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,919 - INFO -basehttp - - Broken pipe from ('127.0.0.1', 49926)
+2023-01-09 08:21:18,919 - WARNING -basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,921 - WARNING -log - Not Found: /static/admin/js/vendor/xregexp/xregexp.min.js
+2023-01-09 08:21:18,922 - WARNING -basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,922 - WARNING -basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,930 - WARNING -log - Not Found: /static/admin/js/filters.js
+2023-01-09 08:21:18,930 - WARNING -basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,946 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-09 08:21:18,946 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-09 08:21:18,947 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-09 08:21:18,947 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-09 08:21:19,025 - WARNING -log - Not Found: /favicon.ico
+2023-01-09 08:21:19,025 - WARNING -basehttp - "GET /favicon.ico HTTP/1.1" 404 179
+2023-01-09 08:21:27,319 - INFO -basehttp - "GET /portal HTTP/1.1" 301 0
+2023-01-09 08:21:27,391 - INFO -basehttp - "GET /portal/ HTTP/1.1" 200 7401
+2023-01-09 08:22:59,177 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:22:59,814 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:23:11,601 - INFO -basehttp - "GET /portal/ HTTP/1.1" 200 7401
+2023-01-09 08:23:18,575 - INFO -basehttp - "GET /admin/news/post/ HTTP/1.1" 200 34791
+2023-01-09 08:23:18,597 - WARNING -log - Not Found: /static/admin/js/core.js
+2023-01-09 08:23:18,598 - WARNING -basehttp - "GET /static/admin/js/core.js HTTP/1.1" 404 179
+2023-01-09 08:23:18,599 - WARNING -log - Not Found: /static/admin/js/vendor/jquery/jquery.min.js
+2023-01-09 08:23:18,600 - WARNING -basehttp - "GET /static/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 404 179
+2023-01-09 08:23:24,365 - INFO -basehttp - "GET /lessons/ HTTP/1.1" 200 3264
+2023-01-09 08:23:57,603 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:23:58,259 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:25,340 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:25,978 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:29,550 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:30,199 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:33,766 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:34,431 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:39,021 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:39,679 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:46,355 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:46,997 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:25:49,505 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:25:50,120 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:26:09,287 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:26:09,906 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:26:11,368 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:26:11,972 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:26:13,433 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:26:14,086 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:29:33,165 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:29:33,839 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:29:50,975 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:35:16,635 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:35:31,791 - INFO -basehttp - "GET /portal/news/create/ HTTP/1.1" 200 4180
+2023-01-09 08:35:37,311 - INFO -basehttp - "POST /portal/news/create/ HTTP/1.1" 302 0
+2023-01-09 08:35:37,326 - INFO -basehttp - "GET /portal/219 HTTP/1.1" 200 3373
