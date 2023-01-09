@@ -91,3 +91,33 @@
 2023-01-09 08:35:31,791 - INFO -basehttp - "GET /portal/news/create/ HTTP/1.1" 200 4180
 2023-01-09 08:35:37,311 - INFO -basehttp - "POST /portal/news/create/ HTTP/1.1" 302 0
 2023-01-09 08:35:37,326 - INFO -basehttp - "GET /portal/219 HTTP/1.1" 200 3373
+2023-01-09 08:39:08,725 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:39:09,361 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:39:11,868 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:40:28,470 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:40:36,945 - INFO -basehttp - "POST /portal/news/create/ HTTP/1.1" 302 0
+2023-01-09 08:40:36,964 - INFO -basehttp - "GET /portal/220 HTTP/1.1" 200 3373
+2023-01-09 08:41:07,819 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:41:08,460 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:41:08,460 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:41:31,908 - INFO -basehttp - "GET /portal/news/create/ HTTP/1.1" 200 4180
+2023-01-09 08:41:42,726 - INFO -basehttp - "POST /portal/news/create/ HTTP/1.1" 302 0
+2023-01-09 08:41:42,737 - INFO -basehttp - "GET /portal/post_count/ HTTP/1.1" 200 3363
+2023-01-09 08:41:55,435 - INFO -basehttp - "GET /accounts/logout HTTP/1.1" 301 0
+2023-01-09 08:41:55,450 - INFO -basehttp - "GET /accounts/logout/ HTTP/1.1" 200 443
+2023-01-09 08:41:57,890 - INFO -basehttp - "POST /accounts/logout/ HTTP/1.1" 302 0
+2023-01-09 08:41:57,893 - INFO -basehttp - "GET / HTTP/1.1" 302 0
+2023-01-09 08:41:57,896 - INFO -basehttp - "GET /accounts/login?next=/ HTTP/1.1" 301 0
+2023-01-09 08:41:57,921 - INFO -basehttp - "GET /accounts/login/?next=/ HTTP/1.1" 200 4615
+2023-01-09 08:42:24,339 - INFO -basehttp - "POST /accounts/login/ HTTP/1.1" 200 4760
+2023-01-09 08:42:37,780 - INFO -basehttp - "POST /accounts/login/ HTTP/1.1" 302 0
+2023-01-09 08:42:37,796 - INFO -basehttp - "GET / HTTP/1.1" 200 3515
+2023-01-09 08:42:53,561 - INFO -basehttp - "GET /portal/ HTTP/1.1" 200 7401
+2023-01-09 08:43:12,258 - INFO -basehttp - "GET /portal/news/create/ HTTP/1.1" 200 4180
+2023-01-09 08:43:28,983 - INFO -basehttp - "POST /portal/news/create/ HTTP/1.1" 302 0
+2023-01-09 08:43:28,995 - INFO -basehttp - "GET /portal/221 HTTP/1.1" 200 3366
+2023-01-09 08:44:00,386 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:44:00,386 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:44:01,031 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-09 08:44:02,544 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-09 08:44:03,155 - INFO -autoreload - Watching for file changes with StatReloader

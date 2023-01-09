@@ -291,6 +291,6 @@ LOGGING = {
             'level': 'DEBUG',
             'handlers': ['con_d', 'con_w', 'con_e', 'file_security', 'file_general'],
             'propagate': False,
-        }
+        },
     }
 }
