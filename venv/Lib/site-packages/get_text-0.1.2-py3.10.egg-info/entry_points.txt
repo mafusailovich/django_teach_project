@@ -1,0 +1,3 @@
+[console_scripts]
+get_text = get_text.cli:main
+

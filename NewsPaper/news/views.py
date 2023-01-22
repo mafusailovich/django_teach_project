@@ -1,6 +1,6 @@
 import time
-from django.shortcuts import render
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView
+from django.shortcuts import render, HttpResponse
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView, TemplateView, View
 from .models import Post, Category, User, PostCategory, Author
 from django.contrib.auth.models import Group
 from .filters import PostFilter
@@ -11,6 +11,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect
 from .signals import *
 from django.core.cache import cache
+from django.utils.translation import gettext as _
 
 
 class PostList(ListView):
@@ -141,3 +142,13 @@ def notsubscribe_me(request):
         subscriber.category_set.remove(Category.objects.get(pk=category))
 
     return redirect('/portal/')
+
+class TTT(View):
+    def get(self, request):
+        string = _('Hello world')
+
+        context = {
+            'string': string
+        }
+
+        return HttpResponse(render(request, 'hell.html', context))

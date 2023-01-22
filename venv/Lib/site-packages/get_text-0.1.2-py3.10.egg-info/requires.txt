@@ -1,0 +1,6 @@
+Click>=6.0
+requests
+beautifulsoup4
+Jinja2
+urllib3
+PyYAML

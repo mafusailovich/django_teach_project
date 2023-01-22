@@ -121,3 +121,263 @@
 2023-01-09 08:44:01,031 - INFO -autoreload - Watching for file changes with StatReloader
 2023-01-09 08:44:02,544 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
 2023-01-09 08:44:03,155 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:27:55,248 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:28:01,962 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\news\urls.py changed, reloading.
+2023-01-13 11:28:03,071 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:28:08,116 - INFO -basehttp - "GET / HTTP/1.1" 302 0
+2023-01-13 11:28:08,116 - INFO -basehttp - "GET /accounts/login?next=/ HTTP/1.1" 301 0
+2023-01-13 11:28:08,260 - INFO -basehttp - "GET /accounts/login/?next=/ HTTP/1.1" 200 4745
+2023-01-13 11:28:08,745 - WARNING -log - Not Found: /favicon.ico
+2023-01-13 11:28:08,746 - WARNING -basehttp - "GET /favicon.ico HTTP/1.1" 404 179
+2023-01-13 11:28:17,358 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:28:36,819 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-13 11:29:43,109 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:29:46,282 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:49,528 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:50,480 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:50,887 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:51,037 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:51,205 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:55,922 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:56,081 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:29:56,278 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 11
+2023-01-13 11:30:50,807 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:30:53,150 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 19
+2023-01-13 11:47:50,757 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:47:54,989 - INFO -basehttp - "GET /portal/hello HTTP/1.1" 200 19
+2023-01-13 11:48:01,452 - INFO -basehttp - "GET /admin HTTP/1.1" 301 0
+2023-01-13 11:48:01,524 - INFO -basehttp - "GET /admin/ HTTP/1.1" 302 0
+2023-01-13 11:48:01,660 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:48:01,691 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:48:01,699 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:48:01,699 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:48:01,707 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:48:01,732 - WARNING -log - Not Found: /static/admin/css/login.css
+2023-01-13 11:48:01,732 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:48:01,732 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:48:01,740 - WARNING -basehttp - "GET /static/admin/css/login.css HTTP/1.1" 404 179
+2023-01-13 11:48:01,740 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:48:01,740 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:48:01,746 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:48:01,746 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:48:07,447 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:48:07,496 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:48:07,504 - WARNING -log - Not Found: /static/admin/css/login.css
+2023-01-13 11:48:07,512 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:48:07,512 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:48:07,512 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:48:07,516 - WARNING -basehttp - "GET /static/admin/css/login.css HTTP/1.1" 404 179
+2023-01-13 11:48:07,516 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:48:07,516 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:48:07,516 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:48:07,518 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:48:07,518 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:48:07,520 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:48:18,418 - INFO -basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-01-13 11:48:18,538 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:48:18,567 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:48:18,569 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:48:18,597 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:48:18,597 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:48:18,606 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:48:18,608 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:48:18,609 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:48:18,611 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:48:18,611 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:48:18,611 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:48:18,611 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:48:18,617 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,238 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:48:22,300 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:48:22,300 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,317 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:48:22,317 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:48:22,317 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:48:22,317 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:48:22,317 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:48:22,317 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,325 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,325 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,325 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:48:22,327 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:48:22,366 - WARNING -log - Not Found: /favicon.ico
+2023-01-13 11:48:22,366 - WARNING -basehttp - "GET /favicon.ico HTTP/1.1" 404 179
+2023-01-13 11:49:03,492 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-13 11:49:04,679 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:49:14,950 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.
+2023-01-13 11:49:16,153 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:49:19,216 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:49:19,257 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:19,257 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:49:19,257 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:19,257 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:49:19,265 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:19,265 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:19,265 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:19,265 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:19,270 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:19,270 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:19,270 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:19,270 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,733 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:49:20,767 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:20,767 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:20,775 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,775 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:20,775 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:20,775 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,775 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:49:20,779 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,779 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:20,779 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:20,782 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,782 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,911 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:49:20,948 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:49:20,948 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,948 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:20,953 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:20,953 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:20,953 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:20,953 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:20,953 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,953 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,953 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:20,958 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:20,959 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:23,027 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:49:23,070 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:23,071 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:23,071 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:23,076 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:23,077 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:49:23,078 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:23,079 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:23,079 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:23,079 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:23,080 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:49:23,080 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:23,082 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:25,343 - INFO -basehttp - "POST /admin/logout/ HTTP/1.1" 200 1648
+2023-01-13 11:49:25,392 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:25,392 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:25,400 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:25,400 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:25,408 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:25,409 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:25,409 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:25,409 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:25,414 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:25,414 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:27,080 - INFO -basehttp - "GET /admin/ HTTP/1.1" 302 0
+2023-01-13 11:49:27,125 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:49:27,176 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:27,184 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:27,192 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:27,196 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:27,196 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:27,196 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:27,196 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:27,204 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:27,204 - WARNING -log - Not Found: /static/admin/css/login.css
+2023-01-13 11:49:27,207 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:27,210 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:27,210 - WARNING -basehttp - "GET /static/admin/css/login.css HTTP/1.1" 404 179
+2023-01-13 11:49:32,786 - INFO -basehttp - "GET /admin/ HTTP/1.1" 302 0
+2023-01-13 11:49:32,799 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:49:32,867 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:49:32,867 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:49:32,867 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:49:32,867 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:49:32,875 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:49:32,875 - WARNING -log - Not Found: /static/admin/css/login.css
+2023-01-13 11:49:32,875 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:49:32,875 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:49:32,875 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:49:32,880 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:49:32,881 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:49:32,882 - WARNING -basehttp - "GET /static/admin/css/login.css HTTP/1.1" 404 179
+2023-01-13 11:50:48,136 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:50:52,586 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:50:55,907 - INFO -basehttp - "GET /admin/ HTTP/1.1" 302 0
+2023-01-13 11:50:55,923 - INFO -basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2301
+2023-01-13 11:50:55,957 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:50:55,965 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:50:55,977 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:50:55,985 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:50:55,993 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:50:55,993 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:50:55,999 - WARNING -log - Not Found: /static/admin/css/login.css
+2023-01-13 11:50:55,999 - WARNING -basehttp - "GET /static/admin/css/login.css HTTP/1.1" 404 179
+2023-01-13 11:50:55,999 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:50:55,999 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:50:56,007 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:50:56,007 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:51:06,158 - INFO -basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-01-13 11:51:06,240 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:51:06,295 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:51:06,301 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:51:06,304 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:51:06,304 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:51:06,304 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:51:06,312 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:51:06,312 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:51:06,316 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:51:06,317 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:51:06,317 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:51:06,318 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:51:06,319 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:59:20,053 - INFO -autoreload - Watching for file changes with StatReloader
+2023-01-13 11:59:26,287 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:59:26,330 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:59:26,330 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:59:26,330 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:59:26,337 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:59:26,337 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:59:26,337 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:59:26,337 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:59:26,337 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:59:26,337 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:59:26,337 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:59:26,346 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:59:26,346 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:59:27,347 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:59:27,383 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:59:27,383 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,383 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:59:27,383 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:59:27,391 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:59:27,391 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,391 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,391 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:59:27,391 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:59:27,397 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,397 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:59:27,397 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,607 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:59:27,633 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:59:27,641 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:59:27,641 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,641 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:59:27,644 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:59:27,644 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:59:27,644 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:59:27,644 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,644 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,644 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:59:27,653 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:59:27,653 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 11:59:28,043 - INFO -basehttp - "GET /admin/ HTTP/1.1" 200 14743
+2023-01-13 11:59:28,082 - WARNING -log - Not Found: /static/admin/css/nav_sidebar.css
+2023-01-13 11:59:28,082 - WARNING -log - Not Found: /static/admin/css/responsive.css
+2023-01-13 11:59:28,082 - WARNING -log - Not Found: /static/admin/js/nav_sidebar.js
+2023-01-13 11:59:28,082 - WARNING -basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 404 179
+2023-01-13 11:59:28,082 - WARNING -log - Not Found: /static/admin/css/dashboard.css
+2023-01-13 11:59:28,082 - WARNING -log - Not Found: /static/admin/css/dark_mode.css
+2023-01-13 11:59:28,092 - WARNING -basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 404 179
+2023-01-13 11:59:28,092 - WARNING -log - Not Found: /static/admin/css/base.css
+2023-01-13 11:59:28,092 - WARNING -basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 404 179
+2023-01-13 11:59:28,092 - WARNING -basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 404 179
+2023-01-13 11:59:28,092 - WARNING -basehttp - "GET /static/admin/css/base.css HTTP/1.1" 404 179
+2023-01-13 11:59:28,092 - WARNING -basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 404 179
+2023-01-13 12:02:48,447 - INFO -autoreload - C:\Users\mafusailovich\PycharmProjects\sfINTPY\django_teach_project\NewsPaper\NewsPaper\settings.py changed, reloading.

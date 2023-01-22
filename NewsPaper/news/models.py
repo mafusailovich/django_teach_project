@@ -6,6 +6,7 @@ from datetime import datetime
 from django.core.validators import MinValueValidator
 from django.urls import reverse
 from django.core.cache import cache
+from django.utils.translation import gettext as _
 
 
 POSITIONS = [('news', 'Новости'), ('post', 'Статьи')]
@@ -44,7 +45,7 @@ class Author(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255, unique=True, help_text=_('category_name'))
     subscribers = models.ManyToManyField(User)
 
     def __str__(self):
